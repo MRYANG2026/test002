@@ -1,0 +1,3 @@
+﻿  hello world.cpp
+D:\VisualStudio\Project\01-C++基础语法学习\01-Hello word\hello world.cpp(3,6): warning C4326: “main”的返回类型应为“int”而非“void”
+  01-Hello word.vcxproj -> D:\VisualStudio\Project\01-C++基础语法学习\01-Hello word\x64\Debug\01-Hello word.exe
