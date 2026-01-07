@@ -1,0 +1,29 @@
+gitignore text eol=lf
+
+# VS 输出目录
+x64/
+x86/
+Win32/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.psess
+*.ncb
+*.opensdf
+*.sdf
+*.ipch
+x64/
+Debug/
+Release/
+*.ilk
+*.pdb
+*.exe
+*.tlog
+*.lastbuildstate
+*.idb
+*.obj
+*.log
+*.recipe
