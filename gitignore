@@ -1,0 +1,24 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.psess
+*.ncb
+*.opensdf
+*.sdf
+*.ipch
+*.filters
+*.vcxproj
+x64/
+Debug/
+Release/
+*.ilk
+*.pdb
+*.exe
+*.tlog
+*.lastbuildstate
+*.idb
+*.obj
+*.log
+*.recipe
