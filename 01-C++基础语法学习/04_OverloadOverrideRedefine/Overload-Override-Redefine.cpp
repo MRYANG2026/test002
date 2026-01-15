@@ -9,7 +9,8 @@ void main() {
 	b.show();
 	b.a:show();
 	*/
-
+	MyClass* A = new YourClass;
+	A->show();
 
 
 }

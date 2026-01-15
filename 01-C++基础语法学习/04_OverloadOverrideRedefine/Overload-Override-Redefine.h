@@ -2,14 +2,18 @@
 #include <iostream>
 using namespace std;
 /*
-* ①②为函数重载：在统一作用域下，函数名相同， 函数的形参的类型、个数、顺序不同可以重载，返回值类型不能作为重载条件
+* ①②为函数重载：在统一作用域下，函数名相同，重载函数必须有不同的形参列表(包括参数类型、参数个数或参数顺序的不同)可以重载，返回值类型不能作为重载条件
 * ①③为函数重定义：有继承，子类重新定义父类的同名函数（非虚函数），只要函数名相同即可。（屏蔽父类的所有同名函数，解决办法加作用域）
 * ①为函数重写(只有虚函数才能叫重写)：有继承，子类重写父类的虚函数，返回值类型、函数名、形参 必须完全和父类的虚函数一致。（如果子类重写父类的虚函数 子类也是虚函数）
+* 
+* 关键字final:用在父类虚函数中，表示禁止重写，不能用于非虚函数
+* 关键字override：用在子类虚函数中，表示重写，不能用于非虚函数
 */
 class MyClass
 {
 public:
-	virtual void show() {//①   带virtual：Ⅰ
+	virtual void  show() //final
+	{//①   带virtual：Ⅰ
 		cout << "Base::show()" << endl;
 	}
 	void show(int i) {
@@ -18,8 +22,12 @@ public:
 };
 class YourClass :public MyClass {
 public:
-	void show() {
+	void show(int i) {
 		cout << "Son::show()" << endl;//③
+	}
+	void show() //override
+	{//①   带virtual：Ⅰ
+		cout << "Son::show1()" << endl;
 	}
 };
 
